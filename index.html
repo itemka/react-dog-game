@@ -1,0 +1,83 @@
+<audio src="dog.mp3"></audio>
+<div class="wrapper">
+    <div class="item"><img src="dog.jpg" class="photo"></div>
+    <div class="item"><img src="dog.jpg" class="photo"></div>
+    <div class="item"><img src="dog.jpg" class="photo"></div>
+    <div class="item"><img src="dog.jpg" class="photo"></div>
+    <div class="item"><img src="dog.jpg" class="photo"></div>
+    <div class="item"><img src="dog.jpg" class="photo"></div>
+    <div class="item"><img src="dog.jpg" class="photo"></div>
+    <div class="item"><img src="dog.jpg" class="photo"></div>
+    <div class="item"><img src="dog.jpg" class="photo"></div>
+</div>
+<div class="counter">
+    0
+</div>
+
+<script>
+    window.setInterval(function () {
+        var visibleImage = document.querySelector(".show");
+        if (visibleImage) {
+            visibleImage.className = "photo";
+        }
+
+        // найти все картинки
+        var allImages = document.querySelectorAll(".photo");
+        // получаем случайный порядковый номер картинки
+        var index = getRandomImageIndex();
+        // показываем картинку по случайному индексу, вернув класс show
+        allImages[index].className = "photo show";
+        // случайной картинке присобачиваем обработчик события: картинка, когда по тебе
+        // кликнут, вызови нашу функцию
+        allImages[index].onclick = function () {
+            // без точки ищем по названию тега
+            var audio = document.querySelector("audio");
+            // перемотать трек в начало перед проигрыванием
+            audio.currentTime = 0;
+            // даём команду плееру - играй
+            audio.play();
+
+            var counter = document.querySelector(".counter");
+            // +counter.innerHTML - это преобразование строки в число
+            counter.innerHTML = +counter.innerHTML + 1;
+            //counter.innerHTML = Number(counter.innerHTML) + 1;
+        }
+
+    }, 1000);
+
+    // функция, которую если вызвать, вернёт нам случайное число от 0 до 8
+    function getRandomImageIndex() {
+        return Math.floor(Math.random() * 9);
+    }
+</script>
+
+<style>
+    .counter {
+        text-align: center;
+    }
+
+    .wrapper {
+        width: 170px;
+        margin: 100px auto 10px auto;
+    }
+
+    .item {
+        border: 1px solid grey;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        overflow: hidden;
+        display: inline-block;
+    }
+
+    .photo {
+        width: 100%;
+        height: 100%;
+        visibility: hidden;
+    }
+
+    .show {
+        visibility: visible;
+    }
+</style>
