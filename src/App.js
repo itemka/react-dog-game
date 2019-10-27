@@ -35,11 +35,14 @@ class App extends React.Component {
                                                               checkClick={item.checkClick}/>);
         return (
             <div className="App">
-                <div>
+                <div className={"counter"}>
                     {this.props.counterClick}
                 </div>
                 {/*<audio src={dogAudio} controls={true}></audio>*/}
-                {circles}
+                <div>
+                    {circles}
+                </div>
+                <button className={"button"}>Start</button>
             </div>
         )
     }

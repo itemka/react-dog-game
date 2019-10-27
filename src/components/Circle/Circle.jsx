@@ -1,6 +1,6 @@
 import React from 'react';
 import css from './Circle.module.css';
-import DogPhoto from './../Files/dog.jpg';
+import DogPhoto from './../Files/newDog.png';
 import {connect} from "react-redux";
 import {plusClickAction} from "../Redux/ReducerGame";
 import dogAudio from './../Files/dog.mp3';

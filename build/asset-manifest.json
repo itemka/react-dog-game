@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/ReactDogApp/static/css/main.84aebaa9.chunk.css",
+    "main.js": "/ReactDogApp/static/js/main.ffb7f80c.chunk.js",
+    "main.js.map": "/ReactDogApp/static/js/main.ffb7f80c.chunk.js.map",
+    "runtime-main.js": "/ReactDogApp/static/js/runtime-main.04278f3b.js",
+    "runtime-main.js.map": "/ReactDogApp/static/js/runtime-main.04278f3b.js.map",
+    "static/js/2.908cb4aa.chunk.js": "/ReactDogApp/static/js/2.908cb4aa.chunk.js",
+    "static/js/2.908cb4aa.chunk.js.map": "/ReactDogApp/static/js/2.908cb4aa.chunk.js.map",
+    "index.html": "/ReactDogApp/index.html",
+    "precache-manifest.da859fb6374663ef2b65cb7e2777a9f2.js": "/ReactDogApp/precache-manifest.da859fb6374663ef2b65cb7e2777a9f2.js",
+    "service-worker.js": "/ReactDogApp/service-worker.js",
+    "static/css/main.84aebaa9.chunk.css.map": "/ReactDogApp/static/css/main.84aebaa9.chunk.css.map",
+    "static/media/dog.mp3": "/ReactDogApp/static/media/dog.75fa68d4.mp3",
+    "static/media/newDog.png": "/ReactDogApp/static/media/newDog.cf76527e.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.04278f3b.js",
+    "static/js/2.908cb4aa.chunk.js",
+    "static/css/main.84aebaa9.chunk.css",
+    "static/js/main.ffb7f80c.chunk.js"
+  ]
+}

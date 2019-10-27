@@ -6,7 +6,7 @@ import * as serviceWorker from './serviceWorker';
 import {combineReducers, createStore} from "redux";
 import ReducerGame from "./components/Redux/ReducerGame";
 import {Provider} from "react-redux";
-
+    
 const CombineReducer = combineReducers({
     ReducerGame: ReducerGame
 });
