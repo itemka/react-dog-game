@@ -1,30 +1,76 @@
 .item {
     border: 1px solid #656565;
     border-radius: 50%;
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 80px;
     text-align: center;
     overflow: hidden;
     display: inline-block;
     margin: 0 5px;
 }
+
 .item:hover {
     box-shadow: 0px 15px 25px -5px rgba(27, 27, 28, 0.91);
     -webkit-transform: scale(1.03);
     transform: scale(1.03);
 }
+
 .item:active {
     box-shadow: 0px 4px 8px rgba(27, 27, 28, 0.91);
     -webkit-transform: scale(0.98);
     transform: scale(0.98);
+    border: 1px solid red;
 }
-.photo {
+
+.itemGreen:active {
+    border: 1px solid lawngreen;
+}
+
+.hide {
     width: 100%;
     height: 100%;
     visibility: hidden;
 }
+
 .show {
     width: 100%;
     height: 100%;
     visibility: visible;
+    background-image: url("./../Files/newDog.png");
+    background-size: cover;
+}
+
+.show:active {
+    background-image: url("./../Files/click.png");
+    background-size: cover;
+}
+
+
+.itemApp{
+    border: 1px solid #656565;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    overflow: hidden;
+    display: inline-block;
+    margin: 0 5px;
+    box-shadow: 0 15px 25px -5px rgba(27, 27, 28, 0.91);
+}
+.itemAppGreen{
+    border: 1px solid lawngreen;
+}
+.newDog{
+    width: 100%;
+    height: 100%;
+    visibility: visible;
+    background-image: url("./../Files/newDog.png");
+    background-size: cover;
+}
+.click{
+    width: 100%;
+    height: 100%;
+    visibility: visible;
+    background-image: url("./../Files/click.png");
+    background-size: cover;
 }

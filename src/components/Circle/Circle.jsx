@@ -1,11 +1,12 @@
 import React from 'react';
 import css from './Circle.module.css';
-import DogPhoto from './../Files/newDog.png';
 import {connect} from "react-redux";
 import {plusClickAction} from "../Redux/ReducerGame";
 import dogAudio from './../Files/dog.mp3';
+import dogAudioError from './../Files/error.mp3';
 
 const AudioOnClickDog = new Audio(dogAudio);
+const AudioOnClickDogError = new Audio(dogAudioError);
 
 class Circle extends React.Component {
     constructor(props) {
@@ -17,14 +18,18 @@ class Circle extends React.Component {
             this.props.plusClickAction();
             AudioOnClickDog.currentTime = 0;
             AudioOnClickDog.play();
+        } else {
+            AudioOnClickDogError.currentTime = 0;
+            AudioOnClickDogError.play();
         }
     };
 
     render() {
-        let photoShow = this.props.checkClick === true ? `${css.show}` : `${css.photo}`;
+        let photoShow = this.props.checkClick === true ? (`${css.show}`) : `${css.hide}`;
         return (
-            <div className={css.item} onClick={() => this.onClick(this.props.checkClick,)}>
-                <img className={photoShow} src={DogPhoto} alt={this.props.id}/>
+            <div className={this.props.checkClick ? `${css.item} ${css.itemGreen}` : css.item}
+                 onClick={() => this.onClick(this.props.checkClick)}>
+                <div className={photoShow}/>
             </div>
         )
     }
