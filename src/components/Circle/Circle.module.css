@@ -17,7 +17,6 @@
 
 .item:active {
     box-shadow: 0px 4px 8px rgba(27, 27, 28, 0.91);
-    -webkit-transform: scale(0.98);
     transform: scale(0.98);
     border: 1px solid red;
 }
