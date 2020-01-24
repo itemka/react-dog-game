@@ -45,7 +45,7 @@ class App extends React.Component {
         }, 1000);
     };
     gameStop = () => {
-        this.setState({backCount: 3, finish: false,start: false, wait: 0});
+        this.setState({backCount: 3, finish: false, wait: 0});
         this.props.finish();
         this.props.levelDown();
     };
