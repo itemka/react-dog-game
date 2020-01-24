@@ -25,7 +25,8 @@ class Circle extends React.Component {
     };
 
     render() {
-        let photoShow = this.props.checkClick === true ? (`${css.show}`) : `${css.hide}`;
+        let photoShow = this.props.checkClick === true
+        ? (`${css.show}`) : `${css.hide}`;
         return (
             <div className={this.props.checkClick ? `${css.item} ${css.itemGreen}` : css.item}
                  onClick={() => this.onClick(this.props.checkClick)}>
