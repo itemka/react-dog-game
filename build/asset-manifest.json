@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/ReactDogApp/static/css/main.b0438054.chunk.css",
+    "main.js": "/ReactDogApp/static/js/main.645e98a2.chunk.js",
+    "main.js.map": "/ReactDogApp/static/js/main.645e98a2.chunk.js.map",
+    "runtime-main.js": "/ReactDogApp/static/js/runtime-main.04278f3b.js",
+    "runtime-main.js.map": "/ReactDogApp/static/js/runtime-main.04278f3b.js.map",
+    "static/js/2.739a6f20.chunk.js": "/ReactDogApp/static/js/2.739a6f20.chunk.js",
+    "static/js/2.739a6f20.chunk.js.map": "/ReactDogApp/static/js/2.739a6f20.chunk.js.map",
+    "index.html": "/ReactDogApp/index.html",
+    "precache-manifest.819898e3949a4bbe7ad642ce5a086f9c.js": "/ReactDogApp/precache-manifest.819898e3949a4bbe7ad642ce5a086f9c.js",
+    "service-worker.js": "/ReactDogApp/service-worker.js",
+    "static/css/main.b0438054.chunk.css.map": "/ReactDogApp/static/css/main.b0438054.chunk.css.map",
+    "static/media/Circle.module.css": "/ReactDogApp/static/media/newDog.cf76527e.png",
+    "static/media/dog.mp3": "/ReactDogApp/static/media/dog.75fa68d4.mp3",
+    "static/media/error.mp3": "/ReactDogApp/static/media/error.f71584f3.mp3"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.04278f3b.js",
+    "static/js/2.739a6f20.chunk.js",
+    "static/css/main.b0438054.chunk.css",
+    "static/js/main.645e98a2.chunk.js"
+  ]
+}
